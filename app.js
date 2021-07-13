@@ -4,7 +4,6 @@ const server = require("http").Server(app);
 const io = require("socket.io")(server);
 const cors = require("cors");
 const mongoose = require("mongoose");
-const message = require("./server/models/chatMessage");
 const chat = require("./server/models/onlineusers");
 
 app.use(cors());
@@ -20,7 +19,7 @@ mongoose
   .catch((err) => console.log(err));
 
 //taking input in json format
-// app.use(express.json());
+ app.use(express.json());
 
 app.use(express.static(__dirname + "/public"));
 
