@@ -1,6 +1,6 @@
 const Conversation = require("../Models/Conversation");
 
-class Conversation {
+class conversation {
   async UserConversation(req, res) {
     const conversation = new Conversation({
       members: [req.body.senderId, req.body.recieverId],
@@ -25,4 +25,4 @@ class Conversation {
   }
 }
 
-module.exports = new Conversation();
+module.exports = new conversation();
