@@ -14,7 +14,7 @@ const msgSchema = new Schema(
     }
   },
   {
-    timestamps: { createdAt: "createdAt", updatedAt: "updatedAt" },
+    timestamps: { createdAt: "createdAt", updatedAt: "updatedAt" }
   }
 );
 
