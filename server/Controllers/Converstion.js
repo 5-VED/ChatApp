@@ -13,6 +13,7 @@ class Conversation {
       res.status(500).json(error);
     }
   }
+
   async getConveration(req, res) {
     try {
       const conversation = await Conversation.find({
